@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persegi</title>
+</head>
+<body>
+
+    <center>
+        <h1>Menghitung Luas Dan Keliling Peregi Panjang</h1>
+    </center>
+    
+    <table align="left"> 
+        <label for="pjg">Panjang:</label>
+        <input type="text" name="panjang" id="pjg"><br>
+        <br>
+        <label for="lbr"> Lebar   : </label>
+        <input type="text" name="lebar" id="lbr"><br>
+        <br>
+        <input type="button" name="hitung" id="htg" onclick="hitung()" value="Hitung"><br>
+        <br>
+        <tfoot>
+            <label for="hsl">Luas :</label>
+            <td><input type="text"  id="hsl"></td><br>
+            <label for="hsl_kel">Keliling : </label>
+            <td><input type="text"  id="hsl_kel"></td>
+        </tfoot>
+        
+        
+        
+    </table>
+
+</body>
+    <script>
+        var luas;
+        var keliling;
+        var panjang;
+        
+
+            function hitung(){
+              panjang = parseFloat(document.getElementById('pjg').value  );
+              lebar = parseFloat(document.getElementById('lbr').value);
+              luas = panjang * lebar;
+              keliling = luas * 4;
+
+              document.getElementById('hsl').value = luas;
+              document.getElementById('hsl_kel').value = keliling;
+
+
+
+
+            }
+    </script>
+</html>

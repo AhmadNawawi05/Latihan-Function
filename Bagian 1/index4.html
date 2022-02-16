@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>egitiga</title>
+</head>
+<body>
+
+    <center>
+        <h1>Menghitung Luas Dan Keliling Segitiga</h1>
+    </center>
+    
+    <table align="left"> 
+        <label for="pjg">Jari-Jari :</label>
+        <input type="text" name="panjang" id="pjg"><br>
+        <br>
+        
+        <br>
+        <input type="button" name="hitung" id="htg" onclick="hitung()" value="Hitung"><br>
+        
+        <tfoot>
+            <label for="hsl">Luas :</label>
+            <td><input type="text"  id="hsl"></td><br>
+            <label for="hsl_kel">Keliling : </label>
+            <td><input type="text"  id="hsl_kel"></td>
+        </tfoot>
+        
+        
+        
+    </table>
+
+</body>
+    <script>
+        var luas;
+        var keliling;
+        var panjang;
+        var sisi;
+        
+
+            function hitung(){
+              panjang = parseFloat(document.getElementById('pjg').value  );
+              luas = 22/7;
+              hasil = luas * panjang;
+              keliling = 3.14 * 2 * panjang;
+              
+
+              document.getElementById('hsl').value = hasil;
+              
+              document.getElementById('hsl_kel').value = keliling;
+              
+              
+
+
+
+
+            }
+    </script>
+</html>
